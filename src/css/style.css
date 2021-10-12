@@ -1,0 +1,217 @@
+/*Any*/
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+p {
+    margin: 0 0 10px;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, sans-serif;
+    background-color: rgba(242, 242, 242, 95);
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1440px;
+}
+
+/*/Any*/
+
+/*header*/
+header {
+    height: 80px;
+    background-color: white;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__left__logo {
+    margin: 15px 40px;
+}
+
+.nav__right__item {
+    text-decoration: none;
+    color: black;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 10px;
+    text-transform: uppercase;
+    opacity: .75;
+    transition: opacity .2s linear;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.nav__right__item:first-child {
+    margin-left: 0;
+}
+
+.nav__right__item:hover {
+    opacity: 1;
+    color: #eb652f;
+}
+
+.nav__right__item:after {
+    display: none;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: #eb652f;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+}
+
+.nav__right__item:hover:after {
+    display: block;
+}
+
+.nav__right {
+    display: flex;
+    flex-direction: row;
+}
+
+/*/header*/
+/*sub_header*/
+
+.sub_header {
+    background: url("/src/img/Vrstva 1.png") center no-repeat;
+    max-width: 1440px;
+    height: 460px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    position: relative;
+}
+
+.sub_header::before {
+    content: "";
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M34.575 47.5C34.2016 47.5013 33.8325 47.4188 33.4951 47.2588C33.1576 47.0987 32.8603 46.865 32.625 46.575L20.55 31.575C20.1823 31.1277 19.9813 30.5665 19.9813 29.9875C19.9813 29.4084 20.1823 28.8473 20.55 28.4L33.05 13.4C33.4744 12.8894 34.0842 12.5684 34.7452 12.5074C35.4063 12.4465 36.0645 12.6506 36.575 13.075C37.0856 13.4993 37.4066 14.1091 37.4676 14.7702C37.5285 15.4312 37.3244 16.0894 36.9 16.6L25.725 30L36.525 43.4C36.8307 43.7669 37.0249 44.2138 37.0846 44.6877C37.1443 45.1615 37.067 45.6426 36.8619 46.0739C36.6568 46.5052 36.3324 46.8688 35.9271 47.1215C35.5218 47.3742 35.0526 47.5056 34.575 47.5Z' fill='black'/%3E%3C/svg%3E%0A");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    left: 60px;
+    top: 50%;
+}
+
+.sub_header::after {
+    content: "";
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M25 47.5C24.4159 47.5011 23.8498 47.2977 23.4 46.925C23.1469 46.7151 22.9376 46.4574 22.7842 46.1665C22.6308 45.8756 22.5364 45.5574 22.5062 45.2299C22.476 44.9025 22.5107 44.5723 22.6083 44.2583C22.7059 43.9443 22.8645 43.6526 23.075 43.4L34.275 30L23.475 16.575C23.2673 16.3193 23.1123 16.025 23.0187 15.7092C22.9251 15.3933 22.8949 15.0621 22.9297 14.7345C22.9646 14.407 23.0638 14.0895 23.2217 13.8004C23.3797 13.5113 23.5932 13.2563 23.85 13.05C24.1087 12.8224 24.4116 12.6507 24.7397 12.5458C25.0679 12.4408 25.4142 12.4048 25.7569 12.44C26.0997 12.4752 26.4314 12.5809 26.7314 12.7504C27.0313 12.9199 27.293 13.1496 27.5 13.425L39.575 28.425C39.9427 28.8723 40.1437 29.4334 40.1437 30.0125C40.1437 30.5916 39.9427 31.1527 39.575 31.6L27.075 46.6C26.8242 46.9025 26.5056 47.1417 26.1451 47.2981C25.7846 47.4544 25.3923 47.5236 25 47.5Z' fill='black'/%3E%3C/svg%3E%0A");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    right: 60px;
+    top: 50%;
+}
+
+.sub_header__wrapper {
+}
+
+/*/sub_header*/
+.sub_header__title {
+    padding: 100px 60px;
+    font-family: Myriad Pro, sans-serif;
+    font-size: 48px;
+}
+
+.sub_header__text {
+    width: 700px;
+    font-size: 20px;
+    font-family: Myriad Pro, sans-serif;
+    padding: 0 60px;
+}
+
+.sub_header__button {
+    margin-bottom: 50px;
+    margin-left: 950px;
+    height: 50px;
+    width: 250px;
+    color: #eb652f;
+    outline: none;
+    border-radius: 10px;
+    background-color: #fff;
+    border: 1px solid #eb652f;
+}
+
+.orange__box {
+    height: 80px;
+    background-color: #e84e0e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.orange__box__item {
+    font-family: Myriad Pro, sans-serif;
+    font-size: 16px;
+    color: white;
+    margin-right: 150px;
+    font-weight: 500;
+}
+
+.orange__box__item:first-child {
+    margin-left: 150px;
+}
+
+.about__title {
+    margin-left: 25px;
+    font-size: 36px;
+    font-weight: 700;
+    font-family: Myriad Pro, sans-serif;
+}
+
+.about__img {
+    align: left;
+
+}
+
+.about__image {
+    width: 1200px;
+    font-size: 18px;
+    line-height: 150%;
+    margin-bottom: 65px;
+}
+
+.about__text__second {
+    font-size: 18px;
+    line-height: 150%;
+    width: 1200px;
+}
+
+.img__cut {
+    margin: 50px auto;
+    display: block;
+
+}
+
+.container__white {
+    width: 1440px;
+    margin: 50px auto;
+    background-color: white;
+}
+
+.img__cut__any {
+
+    display: block;
+}
